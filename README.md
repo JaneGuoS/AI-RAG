@@ -11,7 +11,8 @@
 - Let's create a simple RAG system that retrieves information from a predefined dataset and generates responses based on the retrieved knowledge.
 - The system will comprise the following components:
 
-![image](https://github.com/user-attachments/assets/3b34f99a-9a8e-4e98-91cd-cb86a01419fe)
+![image](https://github.com/user-attachments/assets/cedc70bc-0f59-4e5c-926e-ed8e55724d1b)
+
 
 
 1. Embedding model: A pre-trained language model that converts input text into embeddings - vector representations that capture semantic meaning. These vectors will be used to search for relevant information in the dataset.
