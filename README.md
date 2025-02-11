@@ -42,7 +42,8 @@
 ### Retrieval phrase
 - In the diagram below, we will take an example of a given Input Query from User. We then calculate the Query Vector to represent the query, and compare it against the vectors in the database to find the most relevant chunks.
 
-![image](https://github.com/user-attachments/assets/60995028-599d-49f4-af7c-874357393b7a)
+![image](https://github.com/user-attachments/assets/6aa3e421-50ce-43b1-a7da-8883be2fae89)
+
 
 
 
