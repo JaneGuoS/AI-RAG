@@ -7,16 +7,18 @@
 
 ## Getting started
 
-### Simple RAG introduction
-Simple RAG https://huggingface.co/blog/ngxson/make-your-own-rag
-Let's create a simple RAG system that retrieves information from a predefined dataset and generates responses based on the retrieved knowledge. The system will comprise the following components:
+### Simple RAG introduction https://huggingface.co/blog/ngxson/make-your-own-rag
+- Let's create a simple RAG system that retrieves information from a predefined dataset and generates responses based on the retrieved knowledge. The system will comprise the following components:
+![image](https://github.com/user-attachments/assets/3b34f99a-9a8e-4e98-91cd-cb86a01419fe)
 
 
-Embedding model: A pre-trained language model that converts input text into embeddings - vector representations that capture semantic meaning. These vectors will be used to search for relevant information in the dataset.
-Vector database: A storage system for knowledge and its corresponding embedding vectors. While there are many vector database technologies like Qdrant, Pinecone, and pgvector, we'll implement a simple in-memory database from scratch.
-Chatbot: A language model that generates responses based on retrieved knowledge. This can be any language model, such as Llama, Gemma, or GPT.
-Indexing phase
+1. Embedding model: A pre-trained language model that converts input text into embeddings - vector representations that capture semantic meaning. These vectors will be used to search for relevant information in the dataset.
+2. Vector database: A storage system for knowledge and its corresponding embedding vectors. While there are many vector database technologies like Qdrant, Pinecone, and pgvector, we'll implement a simple in-memory database from scratch.
+3. Chatbot: A language model that generates responses based on retrieved knowledge. This can be any language model, such as Llama, Gemma, or GPT.
+### Indexing phase
 The indexing phase is the first step in creating a RAG system. It involves breaking the dataset (or documents) into small chunks and calculating a vector representation for each chunk that can be efficiently searched during generation.
+![image](https://github.com/user-attachments/assets/c4075383-53ad-4cba-ad1b-5c0d9a790ba5)
+
 
 
 The size of each chunk can vary depending on the dataset and the application. For example, in a document retrieval system, each chunk can be a paragraph or a sentence. In a dialogue system, each chunk can be a conversation turn.
@@ -36,7 +38,7 @@ To compare the similarity between two vectors, we can use cosine similarity, Euc
 
 Don't worry if you are not familiar with the formula above, we will implement it in the next section.
 
-Retrieval phrase
+### Retrieval phrase
 In the diagram below, we will take an example of a given Input Query from User. We then calculate the Query Vector to represent the query, and compare it against the vectors in the database to find the most relevant chunks.
 
 The result returned by The Vector Database will contains top N most relevant chunks to the query. These chunks will be used by the Chatbot to generate a response.
