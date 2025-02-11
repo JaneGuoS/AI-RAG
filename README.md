@@ -26,7 +26,8 @@
 - The indexing phase is the first step in creating a RAG system. 
 - It involves breaking the dataset (or documents) into small chunks and calculating a vector representation for each chunk that can be efficiently searched during generation.
 
-![image](https://github.com/user-attachments/assets/c4075383-53ad-4cba-ad1b-5c0d9a790ba5)
+![image](https://github.com/user-attachments/assets/40412309-562f-40da-9314-88b62578c417)
+
 
 
 
@@ -41,7 +42,9 @@
 ### Retrieval phrase
 - In the diagram below, we will take an example of a given Input Query from User. We then calculate the Query Vector to represent the query, and compare it against the vectors in the database to find the most relevant chunks.
 
-![image](https://github.com/user-attachments/assets/ae0b5f46-1bc6-4fbd-b632-461a3078c868)
+![image](https://github.com/user-attachments/assets/7b0268b0-5b60-49f0-a99b-a597f402af53)
+
+
 
 
 The result returned by The Vector Database will contains top N most relevant chunks to the query. These chunks will be used by the Chatbot to generate a response.
