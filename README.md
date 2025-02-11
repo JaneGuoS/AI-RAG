@@ -11,7 +11,9 @@
 - Let's create a simple RAG system that retrieves information from a predefined dataset and generates responses based on the retrieved knowledge.
 - The system will comprise the following components:
 
-![image](https://github.com/user-attachments/assets/cedc70bc-0f59-4e5c-926e-ed8e55724d1b)
+![image](https://github.com/user-attachments/assets/f93b7b08-d20e-4bba-97d4-7724a6330803)
+
+
 
 
 
