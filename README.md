@@ -57,13 +57,16 @@ The result returned by The Vector Database will contains top N most relevant chu
    ```bash
    git clone https://github.com/JaneGuoS/customized_app_generator.git
    ```
-2. Define the `.env`
+2. Install pip install chromadb
    ```bash
-     DATABASE_URL=/Users/j.guo/Repo/rust_prototype/test.db
+     pip install --q chromadb
    ```
-4. Run the server
+3. Install ollama
    ```bash
-     cargo run --bin rust_prototype
+     pip install ollama
    ```
-6. Access the server http://localhost:8000/blog_list/
+4. Run the sample
+   ```bash
+     python ai-rag.py 
+   ```
      
